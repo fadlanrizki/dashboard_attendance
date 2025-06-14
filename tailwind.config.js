@@ -10,7 +10,14 @@ module.exports = {
     "./node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary_text: "#6781A1",
+        primary_text_strong: "#344767",
+        primary_text_red: "#F53939",
+        primary_text_light: "#ffffff",
+      },
+    },
   },
   darkMode: "class",
   plugins: [heroui()]
