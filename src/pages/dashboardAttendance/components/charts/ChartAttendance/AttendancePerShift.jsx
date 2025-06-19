@@ -148,6 +148,7 @@ const AttendancePerShift = () => {
 
   const options = {
     responsive: true,
+    maintainAspectRatio: false,
     interaction: {
       mode: "index",
       intersect: false,
@@ -223,13 +224,11 @@ const AttendancePerShift = () => {
   };
 
   return (
-    <div>
+    <div className="w-full h-[300px]">
       <Chart
         type="bar"
         data={data}
         options={options}
-        width={600}
-        height={300}
       />
     </div>
   );
